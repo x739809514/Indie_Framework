@@ -1,7 +1,9 @@
+using System;
 using System.Collections.Generic;
 using Core.UI;
 using Unity.VisualScripting;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 
 public class UIModule
@@ -345,9 +347,24 @@ public class UIModule
 
     private T IsPanelExit<T>()
     {
+        string panelRemove = String.Empty;
         foreach (var panel in PanelDic)
         {
-            if (panel.Value is T t) return t;
+            if (panel.Value is T t)
+            {
+                // 可能存在竞态问题，检查一下
+                if (panel.Value.GameObj==null)
+                {
+                    panelRemove = panel.Key;
+                    break;
+                }
+                return t;
+            }
+        }
+
+        if (panelRemove!=String.Empty)
+        {
+            PanelDic.Remove(panelRemove);
         }
 
         return default;
