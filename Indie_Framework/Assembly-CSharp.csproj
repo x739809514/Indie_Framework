@@ -47,10 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/Core/UI/UIModule.cs" />
+    <Compile Include="Assets/Scripts/Core/Input/InputSystem_Actions.cs.cs" />
     <Compile Include="Assets/Scripts/Panel/TestPanel.cs" />
     <Compile Include="Assets/Scripts/Core/Event/EventName.cs" />
     <Compile Include="Assets/Scripts/PLayerController.cs" />
-    <Compile Include="Assets/Resources/assets/input/InputSystem_Actions.cs.cs" />
     <Compile Include="Assets/Scripts/Core/UI/CanvasControl.cs" />
     <Compile Include="Assets/Scripts/Core/Manager/GameManager.cs" />
     <Compile Include="Assets/Scripts/Core/UI/PanelPath.cs" />
@@ -63,6 +63,31 @@
     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
     <Compile Include="Assets/Scripts/Core/Event/EventModule.cs" />
     <Compile Include="Assets/Scripts/Core/Event/EventSender.cs" />
+    <Compile Include="Assets\Scripts\Core\ResourceLoader\ResourcesLoader.cs" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
+    <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
+    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
+    <None Include="Assets/TextMesh Pro/Sprites/EmojiOne.json" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/6000.2.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -819,6 +844,9 @@
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
@@ -827,6 +855,9 @@
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline">
+      <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
@@ -843,6 +874,9 @@
     <Reference Include="Unity.AI.Navigation.Editor">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
+    </Reference>
     <Reference Include="PPv2URPConverters">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/PPv2URPConverters.dll</HintPath>
     </Reference>
@@ -854,6 +888,9 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+      <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Searcher.Editor">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
@@ -894,11 +931,17 @@
     <Reference Include="Unity.VisualScripting.Flow.Editor">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Profiling.Core">
+      <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.Profiling.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem.ForUI">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.InputSystem.ForUI.dll</HintPath>
@@ -957,14 +1000,18 @@
     <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.AIIntegration.Editor">
+      <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.2D.Sprite.AIIntegration.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.InputSystem">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables.Editor">
+      <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

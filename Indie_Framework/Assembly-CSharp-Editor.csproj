@@ -851,6 +851,9 @@
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
@@ -859,6 +862,9 @@
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline">
+      <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
@@ -875,6 +881,9 @@
     <Reference Include="Unity.AI.Navigation.Editor">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
+    </Reference>
     <Reference Include="PPv2URPConverters">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/PPv2URPConverters.dll</HintPath>
     </Reference>
@@ -886,6 +895,9 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+      <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Searcher.Editor">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
@@ -926,11 +938,17 @@
     <Reference Include="Unity.VisualScripting.Flow.Editor">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Profiling.Core">
+      <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.Profiling.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem.ForUI">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.InputSystem.ForUI.dll</HintPath>
@@ -989,8 +1007,14 @@
     <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.AIIntegration.Editor">
+      <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.2D.Sprite.AIIntegration.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.InputSystem">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables.Editor">
+      <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>/Users/innovation/Indie_Framework/Indie_Framework/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
