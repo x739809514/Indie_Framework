@@ -88,7 +88,7 @@ namespace Core.ResourceLoader
                 }
 
                 var assetHandle = Addressables.LoadAssetAsync<Object>(loc);
-                list.Add(assetHandle); // ✅ 关键：把每个 assetHandle 也记录进 group list
+                list.Add(assetHandle);
 
                 while (!assetHandle.IsDone)
                 {
